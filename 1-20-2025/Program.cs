@@ -87,20 +87,17 @@ namespace _1_20_2025
         }
 
 
-        static bool IsPrime(int num)
+        static bool IsPrime(int number)
         {
-            if (num < 2) return false; // 0 and 1 are not prime numbers
+            if (number < 2)
+                return false;
 
-            // Check for factors from 2 to the square root of num
-            for (int i = 2; i <= Math.Sqrt(num); i++)
+            for (int i = 2; i * i <= number; i++)
             {
-                if (num % i == 0)
-                {
-                    return false; // Found a factor, so it's not prime
-                }
+                if (number % i == 0)
+                    return false;
             }
-
-            return true; // No factors found, so it's prime
+            return true;
         }
 
 
@@ -252,20 +249,19 @@ namespace _1_20_2025
             }
 
             //4
-            Console.Write("Enter the start value: ");
-            int start = int.Parse(Console.ReadLine());
+            Console.Write("Enter the start number: ");
+            int start = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter the end value: ");
-            int end = int.Parse(Console.ReadLine());
+            Console.Write("Enter the end number: ");
+            int end = Convert.ToInt32(Console.ReadLine());
 
-
-            Console.WriteLine($"Prime numbers between {start} and {end}:");
+            Console.WriteLine("Prime numbers between {0} and {1} are:", start, end);
 
             for (int num = start; num <= end; num++)
             {
                 if (IsPrime(num))
                 {
-                    Console.Write(num + " ");
+                    Console.WriteLine(num + " ");
                 }
             }
 
