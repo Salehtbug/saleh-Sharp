@@ -25,24 +25,11 @@ namespace _1_20_2025
 
     class Room
     {
-        // Properties of the Room class
-        public int RoomNumber { get; set; }
-        public string RoomType { get; set; }
-        public decimal PricePerNight { get; set; }
-        public bool IsBooked { get; set; }
-
-        // Constant for the hotel name
         public const string HotelName = "Grand Stay Hotel";
-
-        // Method to display room details
-        public void DisplayRoomDetails()
-        {
-            Console.WriteLine($"Room Number: {RoomNumber}");
-            Console.WriteLine($"Room Type: {RoomType}");
-            Console.WriteLine($"Price Per Night: {PricePerNight:C}"); // Format as currency
-            Console.WriteLine($"Is Booked: {IsBooked}");
-            Console.WriteLine(); // Blank line for better readability
-        }
+        public int RoomNumber;
+        public string RoomType;
+        public double PricePerNight;
+        public bool IsBooked;
     }
 
 
@@ -308,34 +295,47 @@ namespace _1_20_2025
 
 
             //Hotel Reservation System 
-            Room[] rooms = new Room[2];
+            Room room1 = new Room();
+            Room room2 = new Room();
 
-            for (int i = 0; i < rooms.Length; i++)
-            {
-                rooms[i] = new Room(); 
+            Console.WriteLine("Enter details for first room:");
+            Console.Write("Room Number: ");
+            room1.RoomNumber = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine($"Enter details for Room {i + 1}:");
+            Console.Write("Room Type: ");
+            room1.RoomType = Console.ReadLine();
 
-                Console.Write("Room Number: ");
-                rooms[i].RoomNumber = int.Parse(Console.ReadLine());
+            Console.Write("Price Per Night: ");
+            room1.PricePerNight = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("Room Type (Single/Double/Suite): ");
-                rooms[i].RoomType = Console.ReadLine();
+            Console.Write("Is Booked (true/false): ");
+            room1.IsBooked = Convert.ToBoolean(Console.ReadLine());
 
-                Console.Write("Price Per Night: ");
-                rooms[i].PricePerNight = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("\nEnter details for second room:");
+            Console.Write("Room Number: ");
+            room2.RoomNumber = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Is Booked (true/false): ");
-                rooms[i].IsBooked = bool.Parse(Console.ReadLine());
+            Console.Write("Room Type: ");
+            room2.RoomType = Console.ReadLine();
 
-                Console.WriteLine(); 
-            }
+            Console.Write("Price Per Night: ");
+            room2.PricePerNight = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine($"Welcome to {Room.HotelName}!");
-            foreach (var room in rooms)
-            {
-                room.DisplayRoomDetails();
-            }
+            Console.Write("Is Booked (true/false): ");
+            room2.IsBooked = Convert.ToBoolean(Console.ReadLine());
+
+            Console.WriteLine("\nRoom Details:");
+            Console.WriteLine("Hotel: " + Room.HotelName);
+            Console.WriteLine("Room Number: " + room1.RoomNumber);
+            Console.WriteLine("Room Type: " + room1.RoomType);
+            Console.WriteLine("Price Per Night: " + room1.PricePerNight);
+            Console.WriteLine("Is Booked: " + room1.IsBooked);
+
+            Console.WriteLine("\nHotel: " + Room.HotelName);
+            Console.WriteLine("Room Number: " + room2.RoomNumber);
+            Console.WriteLine("Room Type: " + room2.RoomType);
+            Console.WriteLine("Price Per Night: " + room2.PricePerNight);
+            Console.WriteLine("Is Booked: " + room2.IsBooked);
 
         }
 
