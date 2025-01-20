@@ -200,10 +200,23 @@ namespace _1_19_2025_lec2
                         ? ((firstNumber5 < thirdNumber) ? firstNumber5 : ((secondNumber5 > thirdNumber) ? secondNumber5 : thirdNumber))
                         : ((secondNumber5 < thirdNumber) ? secondNumber5 : ((firstNumber5 > thirdNumber) ? firstNumber5 : thirdNumber));
 
-            
+
             Console.WriteLine($"The middle value is: {middleValue}");
 
+            //Console.WriteLine("Q12 \n Insert three numbers to find their middle value : ");
+            //string Num12A = Console.ReadLine();
+            //string Num12B = Console.ReadLine();
+            //string Num12C = Console.ReadLine();
+            //double Num12AConv = int.Parse(Num12A);
+            //double Num12BConv = int.Parse(Num12B);
+            //double Num12CConv = int.Parse(Num12C);
+            //double MiddleValue = (Num12AConv + Num12BConv + Num12CConv) / 3;
+            //Console.WriteLine($"The Middle Value for " + Num12A + $" and " + Num12B + $" and " + Num12C + " is : " + MiddleValue);
 
+
+
+
+            //Console.Read();
 
 
         }
