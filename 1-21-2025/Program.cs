@@ -53,6 +53,34 @@ class Program
         Student student4 = new Student("Habeeb Alafeef", 23, 1004);
         student3.GetDetails();
         student4.GetDetails();
+
+
+        //1. * *What is class?**  
+        //   A class is a blueprint for creating objects, defining their properties and methods.
+
+        //2. **What is object?**
+        //   An object is an instance of a class, containing data and behavior defined by the class.
+
+        //3. **Difference between class && object**
+        //   A class is a template, while an object is a specific instance of that template.
+
+        //4. **Mention the OOP Principles**  
+        //   - Encapsulation
+        //   - Inheritance
+        //   - Polymorphism
+        //   - Abstraction
+
+        //5. **What is property?**
+        //   A property is a special method in a class used to get or set the value of a field.
+
+        //6. **What is field?**
+        //   A field is a variable declared in a class to store data.
+
+        //7. **What is constructor?**
+        //   A constructor is a special method in a class that initializes objects when they are created.
+
+        //8. **What is encapsulation?**
+        //   Encapsulation is restricting access to data by bundling it with methods, ensuring controlled interaction.
     }
 }
 
