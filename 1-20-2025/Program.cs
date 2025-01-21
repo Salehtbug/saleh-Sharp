@@ -117,8 +117,56 @@ namespace _1_20_2025
         }
 
 
+
+        //public static void jana()
+        //{
+        //    int x = 27;
+        //    for (int i = 2; i < x; i++)
+        //    {
+        //        if (x % i == 0)
+        //        {
+        //            Console.WriteLine("Not Prime");
+        //            break;
+        //        }
+        //        else
+        //        {
+
+        //            Console.WriteLine("prime");
+        //            break;
+
+        //        }
+        //    }
+        //}
+
+
+
+        //public static void jana1()
+        //{
+        //    int x = 25;
+        //    bool isPrime = true; 
+
+        //    for (int i = 2; i < x; i++)
+        //    {
+        //        if (x % i == 0)
+        //        {
+        //            Console.WriteLine("Not Prime");
+        //            isPrime = false; 
+        //            break; 
+        //        }
+        //    }
+
+
+        //    if (isPrime)
+        //    {
+        //        Console.WriteLine("Prime");
+        //    }
+        //}
         static void Main(string[] args)
         {
+
+
+
+            //jana1();
             //// While Loop
             //int i = 0;
             //while (i < 5)
@@ -333,6 +381,14 @@ namespace _1_20_2025
             Console.WriteLine("Price Per Night: " + room2.PricePerNight);
             Console.WriteLine("Is Booked: " + room2.IsBooked);
 
+
+
+            //Console.WriteLine($"\nRoom Details:\n" +
+            //      $"Hotel: {Room.HotelName}\n" +
+            //      $"Room Number: {room1.RoomNumber}\n" +
+            //      $"Room Type: {room1.RoomType}\n" +
+            //      $"Price Per Night: {room1.PricePerNight:C}\n" +
+            //      $"Is Booked: {room1.IsBooked}");
         }
 
     }
