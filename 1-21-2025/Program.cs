@@ -54,7 +54,6 @@ class Program
         student3.GetDetails();
         student4.GetDetails();
 
-
         //1. * *What is class?**  
         //   A class is a blueprint for creating objects, defining their properties and methods.
 
