@@ -24,7 +24,7 @@ namespace _1_22_2025
         public int NumberOfDoors { get; set; }
         public void StartCar()
         {
-            Console.WriteLine("Car is starting.");
+            //Console.WriteLine("Car is starting.");
         }
     }
 
@@ -45,8 +45,8 @@ namespace _1_22_2025
                 Model = "Camry",
                 NumberOfDoors = 4
             };
-            car.StartCar();
-            Console.WriteLine($"Car Brand: {car.Brand}, Model: {car.Model}, Doors: {car.NumberOfDoors}");
+            //car.StartCar();
+            //Console.WriteLine($"Car Brand: {car.Brand}, Model: {car.Model}, Doors: {car.NumberOfDoors}");
 
 
 

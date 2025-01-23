@@ -8,15 +8,51 @@ namespace ProblemSolving
 {
     internal class Program
     {
+
+        class Person
+        {
+            public void Sum()
+            {
+                Console.WriteLine(5 + 3);
+            }
+
+            public void Sum(int x , int y)
+            {
+                Console.WriteLine(x + y);
+            }
+
+            public void Sum(int Num1 , double Num2)
+            {
+                Console.WriteLine(Num1 - Num2);
+            }
+
+            public void Sum(double Num2, int Num1)
+            {
+                Console.WriteLine(Num1 * Num2);
+            }
+
+            //public void Sum(double Num1, int Num2)
+            //{
+            //    Console.WriteLine(Num1 + Num2);
+            //}
+
+            //public void Sum(double Num3, int Num4)
+            //{
+            //    Console.WriteLine(Num3 + Num4);
+            //}
+
+        }
         static void Main(string[] args)
         {
-            Console.Write("Enter the number of seconds: ");
-            int totalSeconds = Convert.ToInt32(Console.ReadLine());
+            Person person = new Person();
 
-            int hours = totalSeconds / 3600;
-            int minutes = (totalSeconds % 3600) / 60;
-            int seconds = totalSeconds % 60;
-            Console.WriteLine($" Time: {hours} hours, {minutes} minutes, {seconds} seconds");
+            person.Sum();
+
+            person.Sum(5, 3);    
+            
+            person.Sum(5,3.1);
+
+            person.Sum(8.33, 6);
         }
     }
 }
